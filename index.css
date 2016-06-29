@@ -1,0 +1,148 @@
+/* #1C313E,#77848c,#f95c3d,#FFFFFF,#f95c3d,#FFFFFF,#94E864,#f95c3d  */
+
+/* ---------- GENERAL ---------- */
+/*html,
+body,
+#desktopWrapper,
+#mobileWrapper,
+#rightWrapper,
+#leftWrapper,
+.row,
+.bring,
+.desktopStream,
+.desktopIDE,
+.desktopChat,
+.mobileStream,
+.desktopLog,*/
+/*.mobileIDE,*/
+/*.mobileChat,*/
+/*#chatlioWidgetPlaceholder,*/
+/*.textAreaDiv,
+.container-fluid,
+.carousel.slide,
+.carousel-inner{
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+}
+#desktopWrapper{
+  display: block;
+}
+#mobileWrapper{
+  display: none;
+}
+*:focus {
+  outline: none;
+}*/
+
+/* ---------- VIDEO STREAM SECTION ---------- */
+
+/*.desktopStream iframe,
+.mobileStream iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.desktopStream iframe{
+  height: 100%;
+}
+.desktopStream{
+  background-color: yellow;
+  height: 50%;
+}*/
+
+
+/* ---------- CHAT SECTION ---------- */
+
+/*.desktopChat{
+  background-color: #1C313E;
+  height: 50%;
+}*/
+/*#chatlioWidgetPlaceholder{
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background: pink;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  font-family: input;
+}*/
+
+
+
+
+
+
+
+
+/* ---------- IDE SECTION ---------- */
+
+/*.textAreaDiv{
+  padding: 5px;
+  height: 100%;
+}*/
+/*.desktopIDE{
+  padding: 5px !important;
+}
+.desktopIDE{
+  background-color: #10232e;
+  height: 65%;
+  border-left: 1px solid #000;
+  padding: 1px;
+}*/
+/*.desktopLog{
+  background-color: #1C313E;
+  height: 35%;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  overflow: scroll;
+}
+.desktopLog > .desktopLog > button{
+  margin-left: 6px;
+}*/
+
+
+
+
+
+
+/* ---------- LOG SECTION ---------- */
+
+/*#errorReport{
+  padding: 12px 0 0 12px;
+  color: red !important;
+}
+.exec_button,
+.reload_button{
+  position: relative;
+  background-color: #1C313E;
+  border: none;
+  color: white;
+  padding: 25px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #35434F;
+  cursor: pointer;
+}
+.exec_button > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reload_button > img{
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+*/
+
+
+
+
+/* ---------- MOBILE SECTION ---------- */
+

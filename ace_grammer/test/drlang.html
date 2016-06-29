@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <script src="ace/ace.js" type="text/javascript" data-ace-base="ace" charset="utf-8"></script>
+       
+        <script src="../build/ace_grammar.js"></script>
+        <script src="grammars/drlang.js"></script>
+        <script src="demo.js"></script>
+       
+    
+        
+        <style type="text/css">
+            body {
+                position: relative;
+            }
+
+            #editor { 
+                margin: 0;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                min-width:500px;
+                min-height:500px;
+            }
+           
+            .myMarker {
+  position:absolute;
+  background:rgba(255, 0, 0, 1);
+  z-index:20
+}
+        </style>
+        
+        <title>Deviceradio Grammar Demo</title>
+    </head>
+    <body>
+        
+        <h3>Dynamic DRLANG Grammar</h3>
+
+
+<textarea id="code" style="display:none">
+
+conf io as button
+	pin = 0
+
+conf io as led
+	pin = 1
+
+task read_button on button
+	led = button
+</textarea>
+        <p></p>
+        
+        <div id="editor">
+</div>
+
+        <script>
+        // <![CDATA[
+
+        
+        ace_grammar_demo("editor", document.getElementById("code").value, [
+            /\?json\b/.test(document.location.href) ? {language : "json", grammar : json_grammar} : {language : "drlang", grammar : js_grammar}
+        ]);
+        // ]]>
+        </script>
+    </body>
+</html>

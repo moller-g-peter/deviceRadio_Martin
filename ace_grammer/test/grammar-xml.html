@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <script src="ace/ace.js" type="text/javascript" data-ace-base="ace" charset="utf-8"></script>
+        <script src="../build/ace_grammar.js"></script>
+        <script src="grammars/xml.js"></script>
+        <script src="demo.js"></script>
+        
+        <style type="text/css">
+            body {
+                position: relative;
+            }
+
+            #editor { 
+                margin: 0;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                min-width:500px;
+                min-height:500px;
+            }
+        </style>
+        
+        <title>ACE: Dynamic XML Grammar Demo</title>
+    </head>
+    <body>
+        
+        <h3>ACE (v.<span id="editor-version">0</span>) Grammar (v.<span id="grammar-version">0</span>): Dynamic XML Grammar</h3>
+        
+<pre id="editor"></pre>
+<textarea id="code" style="display:none">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!doctype html&gt;
+&lt;html id="id1" id="id2" style = "color: green"&gt;
+    &lt;!-- this is a comment --&gt;
+    &lt;head id="id1"&gt;
+        &lt;title&gt;HTML Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body id="id1"&gt;
+        &lt;!-- this is a 
+            long comment --&gt;
+        &lt;div class="divclass"&gt;
+            &lt;![CDATA[
+                cdata text in here
+                &lt;a_tag&gt;, etc..
+            ]]&gt;
+        &lt;/div&gt;
+        The indentation tries to be &lt;em&gt;somewhat &amp;quot;do what
+        I mean&amp;quot;&lt;/em&gt;... but might not match your style.
+    &lt;/bdy&gt;
+    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;!doctype html&gt;
+&lt;/html&gt;</textarea>
+        <p></p>
+
+        <script>
+        // <![CDATA[
+        ace_grammar_demo("editor", document.getElementById("code").value, [
+            {language : "xml", grammar : xml_grammar}
+        ]);
+        // ]]>
+        </script>
+    </body>
+</html>

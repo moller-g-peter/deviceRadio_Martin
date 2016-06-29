@@ -1,0 +1,699 @@
+/* #1C313E,#77848c,#f95c3d,#FFFFFF,#f95c3d,#FFFFFF,#94E864,#f95c3d  */
+
+
+/* ---------- GENERAL ---------- */
+html,
+body,
+.streamDiv,
+.chatDiv,
+.ideDiv,
+.row,
+.container-fluid,
+.carousel.slide,
+.carousel-inner{
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  /*background: yellow;*/
+}
+/*.carousel-inner{
+  height: 90%;
+}*/
+.container-fluid{
+  background: #1C313E;
+}
+.nav-pills{
+  display: none;
+}
+.removeWhiteSpace{
+  padding: 0 !important;
+  /*width: 50%;*/
+}
+*:focus {
+  outline: none;
+}
+
+
+
+
+
+/* ---------- STREAM SECTION ---------- */
+
+.info{
+  display: none;
+}
+.streamDiv{
+  position: relative;
+  background-color: #1C313E;
+  /*background-color: yellow;*/
+}
+.streamDiv iframe{
+  position: absolute;
+  width: 100%;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*
+.streamDiv,
+.ideDiv,
+.chatDiv{
+  background-color: yellow !important;
+}
+*/
+
+
+
+/* ---------- CHAT SECTION ---------- */
+
+#chatlioWidgetPlaceholder{
+  /*position: absolute;*/
+  /*z-index: 10000;*/
+/*  top: 0;
+  left: 0;*/
+  /*height: 100%;*/
+  height: 40vh;
+  width: 100%;
+  padding: 5px;
+  /*font-family: input;*/
+}
+/*.chatlioDiv{
+  height: 100%;
+}*/
+.chatlio-widget.embed-inline{
+  border: none !important;
+}
+.chatDiv{
+  /*background-color: #1C313E;*/
+  /*height: 43vh;*/
+  z-index: 1040;
+  /*width: 50%;*/
+}
+.chatlio-title-bar{
+  background-color: #77848c !important;
+}
+.chatlio-online-dot{B
+  color: #94E864 !important;
+}
+.chatlio-message-container{
+  background-color: #1c313e !important;
+  height: calc(100% - 108px) !important;
+  bottom: 72px !important;
+}
+.chatlio-message-from-me > .chatlio-message-content{
+  background-color: #10232e !important;
+  border: none !important;
+}
+.chatlio-message-from-me > .chatlio-message-content span{
+  color: #E9E9E9 !important;
+}
+.chatlio-message-from-them > .chatlio-message-content{
+  background-color: #10232e !important;
+  border: none !important;
+}
+.chatlio-message-from-them > .chatlio-message-content span{
+  color: #f95c3d !important;
+}
+.chatlio-new-message-container{
+  border-top: 1px solid #35434F !important;
+  background-color: #10232e !important;
+  bottom: 0 !important;
+}
+.chatlio-powered-by{
+  display: none !important;
+}
+#chatlio-widget textarea{
+  border: 1px solid #77848c !important;
+  background-color: #E9E9E9 !important;
+}
+.chatlio-widget.embed-inline{
+  border: none !important;
+}
+
+
+
+
+
+
+
+/* ---------- IDE SECTION ---------- */
+
+.ideDiv{
+  background-color: #1C313E;
+  /*background-color: blue;*/
+  padding: 5px !important;
+  height: 65vh;
+  border-left: 1px solid #000;
+  /*width: 50%;*/
+}
+
+
+/*- following style below is needed for the text editor -*/
+#editor { 
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width:500px;
+  min-height:200px;
+}
+.myMarker {
+  position:absolute;
+  background:rgba(255, 0, 0, 1);
+  z-index:20
+}
+.key {
+  color: #657b83;
+}
+.number {
+  color: #dc322f;
+}
+.string {
+  color: #2aa198;
+}
+.null {
+  color: #b58900;
+}
+.boolean {
+  color: #cb4b16;
+}
+pre {
+  padding: 1em 0;
+  word-wrap: break-word;
+  /*border: none !important;*/
+  border: 1px solid #35434F !important;
+}
+pre > code{
+  color: #C1C1C1 !important;
+  padding: 1px !important;
+}
+
+/* this wrapper is causing white space when swiping on mobile phone */
+.wrap {
+  background-color: #1c313e;
+  border: none;
+  border-top: 1px solid #35434F;
+  margin: 15px 0;
+  padding: 0;
+  width: 100%;
+}
+.containerDeviceradio:last-child{
+  margin: 0;
+  overflow: hidden;
+}
+.right {
+  width: auto;
+  margin-top: 0;
+  margin-left: 80px;
+  margin-right: 0;
+}
+.left {     
+  width: 60px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: -60px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  background-color: #073642;
+}
+code {
+  font-family: Input, "Lucida Console", Monaco, monospace;
+  font-size: 1em;
+  -moz-tab-size: 4;
+  -o-tab-size:   4;
+  tab-size:      4;
+}
+.comment.docstring {
+  color: #586e75;
+  font-style: italic;
+}
+.keyword {
+  color: #b58900;
+}
+.constant.numeric {
+  color: #dc322f;
+}
+.constant.string {
+  color: #859900;
+}
+.trigger {
+  color: #268bd2;
+}
+.variable {
+  color: #2aa198;
+}
+.symbol {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.syntax {
+  color: #93a1a1;
+}
+.not {
+  color: #6c71c4;
+}
+.ace-tm{
+  /*background-color: #1c313e !important;*/
+  /*color: white !important;*/
+}
+.ace_cursor{
+  /*color: white !important;*/
+}
+.ace_gutter{
+  /*background-color: #77848c !important;*/
+}
+.ace_gutter-active-line{
+  /*background-color: #1C313E;*/
+}
+.ace_active-line{
+  /*background: rgba(0, 0, 0, 0.2) !important;*/
+}
+/*----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- LOG SECTION ---------- */
+
+.logDiv{
+  background-color: #1C313E;
+  /*background-color: green;*/
+  height: 35vh;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  /*overflow: scroll;*/
+}
+/*.logDiv > button{
+  margin-left: 6px;
+}*/
+#errorReport{
+  padding: 12px 0 0 12px;
+  color: red !important;
+}
+.exec_button,
+.reload_button{
+  position: relative;
+  background-color: #1C313E;
+  border: none;
+  color: white;
+  padding: 25px 25px;
+  /*text-align: center;*/
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #35434F;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+}
+.disabledButtonMessage,
+.disabledButtonReload{
+  position: absolute;
+  background-color: transparent !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #35434F;
+  cursor: pointer;
+  z-index: 1040;
+  margin-top: 5px;
+  padding: 0 !important;
+}
+.disabledButtonReload{
+  margin-left: 56px;
+  background-color: white;
+}
+.disabledMessage{
+  display: inline-block;
+  background-color: #1c313e;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+.disabledMessage p{
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  color: #f95c3d;
+  margin: 0 5px;
+}
+.disabledWrapper{
+  display: block;
+  width: 350px;
+  height: 22px;
+  overflow: hidden;
+}
+.exec_button > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reload_button > img{
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+#console{
+  /*float: right;*/
+  display: inline-block;
+  height: 21px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.newsletterButton{
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+.newsletterButton button{
+  background-color: #1c313e;
+  color: #E9E9E9;
+}
+.mailIcon{
+  display: inline-block;
+}
+.mailIcon span{
+  color: #f95c3d;
+}
+.idleModeInfo code{
+  color: white;
+  background-color: #2574a9;
+}
+.progress-container > .progress{
+  background-color: #3e4d57 !important;
+}
+.progress-container{
+  display: inline-block;
+  /*float: none !important;*/
+  padding-left: 0 !important;
+}
+.progressInfoDivs{
+  float: none !important;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- MODAL SECTION ---------- */
+
+.modal-content{
+  background-color: #1C313E !important;
+  border: 5px solid #f95c3d !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+}
+.close{
+  text-shadow: none !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+.modal-footer{
+  border-top: none !important;
+}
+.modal-header{
+  border-bottom: 1px solid #35434F !important;
+}
+.newsLetterLogo{
+  position: absolute;
+  /*margin-bottom: 10px;*/
+  bottom: 23px;
+  right: 23px;
+}
+.emailFormGroup{
+  margin-bottom: 35px;
+}
+#myModalNewsletter{
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+#myModalNewsletter label{
+  font-weight: 400 !important;
+}
+.coloredSpan{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  .chatlio-message-container{
+    background-color: #1c313e !important;
+    height: calc(100% - 85px) !important;
+    bottom: 49px !important;
+  }*/
+
+
+
+/* -------------------- MOBILE SECTION RATIO 3 -------------------- */
+@media only screen
+/*and (-webkit-device-pixel-ratio:3)*/
+and (min-device-width : 160px)
+and (max-device-width : 1024px)
+{
+  .chatlio-new-message-container-small{
+    background-color: #10232e !important;
+    border-top: 1px solid #35434F !important;
+  }
+  .chatlio-message-container{
+    /*background-color: blue !important;*/
+    height: calc(100% - 85px) !important;
+    bottom: 49px !important;
+  }
+  .carousel.slide,
+  .carousel-inner{
+    height: 100vh;
+  }
+/*  .info{
+    display: block;
+    text-align: center;
+    padding-top: 50%;
+  }*/
+  .ideDiv,
+  .streamDiv{
+    padding: 0 !important;
+    border: none !important;
+  }
+  .streamDiv,
+  .chatDiv,
+  .ideDiv{
+    width: 100%;
+    height: 100%;
+  }
+/*  .chatDiv{
+    float: right !important;
+  }
+  .ideDiv{
+    float: left !important;
+  }*/
+  #chatlioWidgetPlaceholder{
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 92.6vh;
+    width: 100%;
+  }
+  .video-container{
+    padding-top: 0 !Important;
+  }
+  .video-container,
+  .ace_editor,
+  .chatDiv
+  {
+    margin-top: 40px !important;
+  }
+  #editor{
+    height: 60%;
+    min-height: 180px;
+  }
+  #console{
+    margin-top: 10px !important; 
+  }
+  .newsLetterLogo{
+    height: 67px;
+  }
+  #myModalNewsletter{
+    height: 100vh;
+  }
+
+
+  /* ---------- MOBILE MENU TABS ---------- */
+
+  .nav-pills{
+    display: block;
+  }
+  .nav-pills{
+    height: 6.2vh;
+  }
+  ol > li{
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .nav-pills > li > a{
+    border-radius: 0 !important;
+    color: #fff !important;
+  }
+  .nav>li>a:link{
+    background-color: #475F6D;
+  }
+/*  .nav>li>a:hover{
+    background-color: red !important;
+  }*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- MOBILE SECTION -------------------- */
+
+
+@media only screen
+/*and (-webkit-device-pixel-ratio:3)*/
+and (min-device-width : 160px)
+and (max-device-width : 1024px)
+{
+  #chatlioWidgetPlaceholder{
+    height: 96.6vh;
+  }
+  .chatlio-message-container{
+    bottom: 71px !important;
+    height: calc(100% - 106px) !important;
+  }
+}
+
+
+
+/*-------------------------------------------------------*/
+
+@media only screen
+and (-webkit-device-pixel-ratio:3)
+and (min-device-width : 160px)
+and (max-device-width : 1024px)
+{
+  #chatlioWidgetPlaceholder{
+    height: 96.6vh;
+  }
+  .chatlio-message-container{
+    bottom: 71px !important;
+    height: calc(100% - 106px) !important;
+  }
+  .chatlio-new-message-container-small{
+    bottom: 18px !important;
+  }
+}
+
+
+
+/*-------------------------------------------------------*/
+
+@media only screen
+and (-webkit-device-pixel-ratio:2)
+and (min-device-width : 160px)
+and (max-device-width : 1024px)
+{
+  #chatlioWidgetPlaceholder{
+    height: 96.6vh;
+  }
+  .chatlio-message-container{
+    bottom: 71px !important;
+    height: calc(100% - 106px) !important;
+  }
+  .chatlio-new-message-container-small{
+    bottom: 18px !important;
+  }
+  #editor{
+    height: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

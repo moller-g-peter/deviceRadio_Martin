@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <script src="ace/ace.js" type="text/javascript" data-ace-base="ace" charset="utf-8"></script>
+        <script src="../build/ace_grammar.js"></script>
+        <script src="grammars/php.js"></script>
+        <script src="demo.js"></script>
+        
+        <style type="text/css">
+            body {
+                position: relative;
+            }
+
+            #editor { 
+                margin: 0;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                min-width:500px;
+                min-height:500px;
+            }
+        </style>
+        
+        <title>ACE: Dynamic PHP Grammar Demo</title>
+    </head>
+    <body>
+        
+        <h3>ACE (v.<span id="editor-version">0</span>) Grammar (v.<span id="grammar-version">0</span>): Dynamic PHP Grammar</h3>
+
+<pre id="editor"></pre>
+<textarea id="code" style="display:none">$a = (isset($var) && NULL==$b) ? true : false;
+// this is a line comment
+#  this is also a line comment
+define("DEF", "123");
+
+/*
+    this is
+    a
+    multiline
+    comment
+*/
+
+/* allow block delims / block interior 
+to have different styles eg. in a heredoc, see grammars/php.js */
+$heredoc = <<<HEREDOC
+a 
+    heredoc 
+string
+
+HEREDOC;
+
+$s1 = `this is a string`;
+$s2 = "this is also a string with escaped \" ' quotes"; $foo123;
+$s3 = 'this is also a string with escaped " \' quotes';
+
+function a_function( &$v1, $v2 )
+{
+    static $num = (.0123 + 345) || 12;
+    global $int = 123;
+    return $this->is_a_method();
+}</textarea>
+        <p></p>
+
+        <script>
+        // <![CDATA[
+        ace_grammar_demo("editor", document.getElementById("code").value, [
+            {language : "php", grammar : php_grammar}
+        ]);
+        // ]]>
+        </script>
+    </body>
+</html>
