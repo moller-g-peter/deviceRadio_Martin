@@ -406,7 +406,10 @@ code {
   float: none !important;
   display: inline-block;
 }
-
+.btn-group-Martin{
+  /*float: left;*/
+  display: block;
+}
 
 
 
