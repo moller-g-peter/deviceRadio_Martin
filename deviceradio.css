@@ -406,9 +406,9 @@ code {
   float: none !important;
   display: inline-block;
 }
-.btn-group-Martin{
-  /*float: left;*/
-  display: block;
+.deviceDropdown{
+  /*width: 40%;*/
+  float: none !important;
 }
 
 
